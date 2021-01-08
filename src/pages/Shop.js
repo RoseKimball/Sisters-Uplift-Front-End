@@ -111,6 +111,7 @@ const Shop = () => {
         } else {
             fetchProducts({ category: inTheState });
         }
+    }
 
     //filter by brand
     const handleBrand = (e) => {
@@ -139,7 +140,7 @@ const Shop = () => {
       };
 
     //render categories
-    const showCategories = () =>
+    const showCategories = () => 
     categories.map((c) => (
       <div key={c._id}>
         <Checkbox
@@ -268,7 +269,7 @@ const Shop = () => {
     )
 
 }
-}
+
 
 export default Shop;
 
