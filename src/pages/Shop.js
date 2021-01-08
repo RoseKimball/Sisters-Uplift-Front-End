@@ -144,6 +144,7 @@ const Shop = () => {
     categories.map((c) => (
       <div key={c._id}>
         <Checkbox
+          key={c}
           onChange={handleCheck}
           className="pb-2 pl-4 pr-4"
           value={c._id}
@@ -160,6 +161,7 @@ const Shop = () => {
     const showBrands = () =>
         brands.map((b) => (
         <Radio
+            key={b}
             value={b}
             name={b}
             checked={b === brand}
@@ -174,6 +176,7 @@ const Shop = () => {
     const showColors = () =>
     colors.map((c) => (
       <Radio
+        key={c}
         value={c}
         name={c}
         checked={c === color}
